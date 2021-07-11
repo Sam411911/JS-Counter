@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Counter</title>
+    <style>
+        * {
+            overflow: hidden;
+        }
+        
+        body {
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.637);
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .main {
+            background: url(./images/counter-bg.jpg);
+            border: 2px solid azure;
+            border-radius: 10px;
+            padding: 20px 40px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .count-btn {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .num {
+            font-size: 10rem;
+            font-family: fantasy;
+            color: green;
+            filter: drop-shadow(8px 6px rgb(83, 56, 56));
+        }
+        
+        .container h1 {
+            font-weight: 500;
+            color: #fff;
+            font-size: 2.4rem;
+        }
+        
+        .btn {
+            padding: 10px 12px;
+            color: #fff;
+            text-transform: uppercase;
+            background-color: #6a1a7e60;
+            border: none;
+            font-size: 0.9rem;
+            border-radius: 5px;
+        }
+        
+        .btn:hover {
+            cursor: pointer;
+        }
+        
+        .btn:active {
+            color: blue;
+        }
+        
+        .git {
+            text-align: center;
+            margin-top: 5px;
+        }
+        
+        .git img {
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>COUNTER</h1>
+            <div class="num" id="num"></div>
+            <div class="count-btn">
+                <button class="btn" id="low-count">Lower Count</button> <br>
+                <button class="btn" id="add-count">Add Count</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="git">
+        <a href="https://github.com/Sam411911/JS-Counter" target="_blank">
+            <img src="./images/github.svg" alt="#">
+        </a>
+    </div>
+    <script src="./js/sidecount.js"></script>
+</body>
+
+</html>
